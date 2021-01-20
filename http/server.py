@@ -58,7 +58,7 @@ while True:
         })
  """
 
-    if config.dht11:
+"""     if config.dht11:
         build_json['iot2tangle'].append({
             "sensor": "dht11",
             "data": [{
@@ -67,7 +67,7 @@ while True:
             },{
                 "Humidity": str(humidity)
             }]
-        })
+        }) """
 
 """ 
     #If Accelerometer

@@ -1,5 +1,5 @@
 # Device name
-device_id = 'DEVICE_ID'
+device_id = 'DHT11'
 
 # Select sensors to use 1 = use | 0 = skip
 dht11 = 1
