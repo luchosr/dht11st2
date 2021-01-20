@@ -1,7 +1,7 @@
 #from sense_hat import SenseHat
 from collections import OrderedDict
-sense=SenseHat()
-sense.clear()
+""" sense=SenseHat()
+sense.clear() """
 import time
 import config
 import requests
@@ -10,10 +10,10 @@ import RPi.GPIO as GPIO
 import dht11
 
 while True:
-
-   """  # Get Unix timestamp
+  # Get Unix timestamp
     timestamp = int(time.time())
 
+   """
     # Get Temp/Press/Hum values
     temp = sense.get_temperature()
     press = sense.get_pressure()
