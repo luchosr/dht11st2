@@ -13,30 +13,7 @@ while True:
   # Get Unix timestamp
     timestamp = int(time.time())
 
-   """
-    # Get Temp/Press/Hum values
-    temp = sense.get_temperature()
-    press = sense.get_pressure()
-    humidity = sense.get_humidity()
 
-    #Get Gyroscope values
-    o = sense.get_orientation()
-    x_gyroscope = o["pitch"]
-    y_gyroscope = o["roll"]
-    z_gyroscope = o["yaw"]
-
-    #Get Accelerometer values
-    a = sense.get_accelerometer_raw()
-    x_accelerometer = a["x"]
-    y_accelerometer = a["y"]
-    z_accelerometer = a["z"]
-
-    #Get Magnetometer (Compass) values
-    m = sense.get_compass_raw()
-    x_compass = m["x"]
-    y_compass = m["y"]
-    z_compass = m["z"]
- """
 
     # Json open
     build_json = {
