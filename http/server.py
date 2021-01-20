@@ -11,7 +11,7 @@ import dht11
 
 while True:
 
-    # Get Unix timestamp
+   """  # Get Unix timestamp
     timestamp = int(time.time())
 
     # Get Temp/Press/Hum values
@@ -36,7 +36,7 @@ while True:
     x_compass = m["x"]
     y_compass = m["y"]
     z_compass = m["z"]
-
+ """
 
     # Json open
     build_json = {
