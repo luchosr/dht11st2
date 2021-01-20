@@ -20,23 +20,23 @@ while True:
     humidity = sense.get_humidity()
 
     #Get Gyroscope values
-    """ o = sense.get_orientation()
+    o = sense.get_orientation()
     x_gyroscope = o["pitch"]
     y_gyroscope = o["roll"]
-    z_gyroscope = o["yaw"] """
+    z_gyroscope = o["yaw"]
 
     #Get Accelerometer values
-   """  a = sense.get_accelerometer_raw()
+    a = sense.get_accelerometer_raw()
     x_accelerometer = a["x"]
     y_accelerometer = a["y"]
-    z_accelerometer = a["z"] """
+    z_accelerometer = a["z"]
 
     #Get Magnetometer (Compass) values
- """    m = sense.get_compass_raw()
+    m = sense.get_compass_raw()
     x_compass = m["x"]
     y_compass = m["y"]
     z_compass = m["z"]
- """
+
 
     # Json open
     build_json = {
