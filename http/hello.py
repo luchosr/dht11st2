@@ -4,15 +4,39 @@ import config
 import requests
 import json
 #import RPi.GPIO as GPIO
-import dht11
+#import dht11
+
+import Adafruit_DHT
+ 
+# Set sensor type : Options are DHT11,DHT22 or AM2302
+sensor=Adafruit_DHT.DHT11
+ 
+# Set GPIO sensor is connected to
+gpio=17
+ 
+# Use read_retry method. This will retry up to 15 times to
+# get a sensor reading (waiting 2 seconds between each retry).
+humidity, temperature = Adafruit_DHT.read_retry(sensor, gpio)
+ 
+# Reading the DHT11 is very sensitive to timings and occasionally
+# the Pi might fail to get a valid reading. So check if readings are valid.
+if humidity is not None and temperature is not None:
+  print('Temp={0:0.1f}*C  Humidity={1:0.1f}%'.format(temperature, humidity))
+else:
+  print('Failed to get reading. Try again!')
+
+
+
+
+
 
 # while True:
 #   # Get Unix timestamp
 #     timestamp = int(time.time())
-timestamp = 'feliz cumpleaños'
+#timestamp = 'feliz cumpleaños'
 print('hola')
 
-build_json = {
+""" build_json = {
     "iot2tangle": [],
     "device": str(config.device_id),
     "timestamp": str(timestamp)
@@ -35,3 +59,4 @@ except:
 
     # Interval
     time.sleep(config.relay)
+ """
