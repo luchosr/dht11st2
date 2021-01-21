@@ -9,10 +9,10 @@ import json
 import RPi.GPIO as GPIO
 import dht11
 
-GPIO.setwarnings(True)
+""" GPIO.setwarnings(True)
 GPIO.setmode(GPIO.BCM)
 
-instance = dht11.DHT11(pin=14)
+instance = dht11.DHT11(pin=14) """
 
 while True:
   # Get Unix timestamp
