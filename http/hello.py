@@ -29,7 +29,7 @@ else:
 # while True:
 #   # Get Unix timestamp
 #     timestamp = int(time.time())
-# timestamp = 'feliz cumpleaños'
+
 print('hola')
 
 """ build_json = {
