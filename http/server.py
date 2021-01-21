@@ -9,9 +9,25 @@ import json
 import RPi.GPIO as GPIO
 import dht11
 
+GPIO.setwarnings(True)
+GPIO.setmode(GPIO.BCM)
+
+instance = dht11.DHT11(pin=14)
+
 while True:
   # Get Unix timestamp
     timestamp = int(time.time())
+	result = instance.read()
+    if result.is_valid():
+        build_json['iot2tangle'].append({
+            "sensor": "DHT11",
+            "data": [{
+                "Pressure": str("Hola soy la presión"),
+                "Temp": str("Cagamos, llego temperatura")
+            },{
+                "Humidity": str("Faaa como pega esa humedad")
+            }]
+        })    
 
 
 
