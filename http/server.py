@@ -20,7 +20,7 @@ while True:
 
 result = instance.read()
 
-if result.is_valid():
+""" if result.is_valid():
     build_json['iot2tangle'].append({
         "sensor": "DHT11",
         "data": [{
@@ -31,7 +31,7 @@ if result.is_valid():
             #str("Humidity: %-3.1f %%" % result.humidity)
         }]
     })    
-
+ """
 
 
     # Json open
