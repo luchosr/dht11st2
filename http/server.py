@@ -17,7 +17,8 @@ instance = dht11.DHT11(pin=14)
 while True:
   # Get Unix timestamp
     timestamp = int(time.time())
-	result = instance.read()
+
+result = instance.read()
     if result.is_valid():
         build_json['iot2tangle'].append({
             "sensor": "DHT11",
