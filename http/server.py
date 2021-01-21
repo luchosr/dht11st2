@@ -19,16 +19,17 @@ while True:
     timestamp = int(time.time())
 
 result = instance.read()
-    if result.is_valid():
-        build_json['iot2tangle'].append({
-            "sensor": "DHT11",
-            "data": [{
-                "Pressure": str("Hola soy la presión"),
-                "Temp": str("Cagamos, llego temperatura")
-            },{
-                "Humidity": str("Faaa como pega esa humedad")
-            }]
-        })    
+
+if result.is_valid():
+    build_json['iot2tangle'].append({
+        "sensor": "DHT11",
+        "data": [{
+            "Pressure": str("Hola soy la presión"),
+            "Temp": str("Cagamos, llego temperatura")
+        },{
+            "Humidity": str("Faaa como pega esa humedad")
+        }]
+    })    
 
 
 
