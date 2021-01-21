@@ -26,13 +26,13 @@ else:
     print('Failed to get reading. Try again!')
 
 
-# while True:
-#   # Get Unix timestamp
-#     timestamp = int(time.time())
+while True:
+   # Get Unix timestamp
+    timestamp = int(time.time())
 
 print('hola')
 
-""" build_json = {
+build_json = {
     "iot2tangle": [],
     "device": str(config.device_id),
     "timestamp": str(timestamp)
@@ -55,4 +55,3 @@ except:
 
     # Interval
     time.sleep(config.relay)
- """
