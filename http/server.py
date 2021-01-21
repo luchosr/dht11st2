@@ -35,26 +35,26 @@ result = instance.read()
 
 
     # Json open
-    build_json = {
-        "iot2tangle": [],
-        "device":str(config.device_id),
-        "timestamp":str(timestamp)
-    }
+build_json = {
+    "iot2tangle": [],
+    "device":str(config.device_id),
+    "timestamp":str(timestamp)
+}
     # Set Json headers
-    headers = {"Content-Type": "application/json"}
+headers = {"Content-Type": "application/json"}
 
-    # Send Data to Json server
-    try:
-        build_json = json.dumps(build_json)
-        r = requests.post(config.endpoint, data=build_json, headers=headers)
-        r.raise_for_status()
-        print (":: Sending datasets ::")
-        print("--------------------------------------------------------")
-        print(build_json)
+# Send Data to Json server
+try:
+    build_json = json.dumps(build_json)
+    r = requests.post(config.endpoint, data=build_json, headers=headers)
+    r.raise_for_status()
+    print (":: Sending datasets ::")
+    print("--------------------------------------------------------")
+    print(build_json)
 
-    except :
+except :
 
-        print ("No server listening at " + str(config.endpoint))
+    print ("No server listening at " + str(config.endpoint))
 
-        # Interval
-        time.sleep(config.relay)
+    # Interval
+    time.sleep(config.relay)
