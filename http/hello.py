@@ -93,7 +93,7 @@ while True:
     # If Enviromental
     if config.dht11:
         build_json['iot2tangle'].append({
-            "sensor": "Enviromental",
+            "sensor": "DHT11-environmental",
             "data": [{
                 "Temp": str(temperature)
             }, {
