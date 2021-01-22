@@ -9,7 +9,7 @@ accelerometer = 0
 magnetometer = 0
 
 # Select relay interval
-relay = 30
+relay = 180
 
 # Define endpoint
 endpoint = 'http://127.0.0.1:8080/sensor_data'
