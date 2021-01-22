@@ -91,7 +91,7 @@ while True:
     }
 
     # If Enviromental
-    if config.enviromental:
+    if config.dht11:
         build_json['iot2tangle'].append({
             "sensor": "Enviromental",
             "data": [{
