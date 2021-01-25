@@ -1,13 +1,7 @@
-# Sense Hat on Raspberry Pi3/4
-
-The Sense Hat is an add-on board for the Raspberry Pi, made especially for the Astro Pi competition. The board allows you to make measurements of temperature, humidity, pressure, and orientation (Gyroscope, Accelerometer, Magnetometer) and to output information using its built-in LED matrix.
-
-The following repository has the Python code needed to send the Sense Hat sensor's data to a IOTA Streams Gateway. 
-
-This step by step guide will guide you to run the Streams Gateway in the Same Raspberry that senses. Note that you can run the Gateway anywhere (a VPS or another node in your network).
+# DHT11
 
 
-# Instructions for the Sense Hat
+# Instructiones: 
 
 ## Requirements:
 

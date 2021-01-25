@@ -12,5 +12,5 @@
 
 
 # Instrucciones:
-
-- Correr el archivo 
+- En el archivo config.py  si es necesario, modificar la puerta de enlace de la salida de datos y el tiempo de sensado.
+- 
