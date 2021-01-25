@@ -15,7 +15,7 @@ Ensure your APT package list is up-to-date
 
 ```
 sudo apt update
-```
+``` 
 
 Next, install the sense-hat package which will ensure the kernel is up-to-date, enable I2C, and install the necessary libraries and programs
 
